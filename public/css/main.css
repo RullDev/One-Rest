@@ -107,6 +107,17 @@ h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
   margin-bottom: 2.4rem;
 }
 
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #ffffff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 h3, .h03, h4, .h04 {
   margin-bottom: 1.5rem;
 }

@@ -1,9 +1,31 @@
 <section id="about">
 	<p> </p>
 	<div class="row about-how">
-		<h1 class="intro-header">Onee-Api</h1>
+		<h1 class="intro-header">Rull-Api</h1>
 		<h4 style="text-align: center;">Hai <%= username %>, Apikey Kamu : <%= apikey %></h4>
-	</div>
+    <h4 style="text-align:
+center;"> @<%= username %>, Fitur Apikey Cuma Dikit, Pake Seadanya Ya:)</h4>
+    </div>
+      <form action="/api/checkkey">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card">
+<div class="card-header">
+<h3 class="card-title"><i class="tim-icons icon-key-25" aria-hidden="true"></i> Apikey Check</h3>
+</div>
+<div class="card-body text-sm-left font-weight-bold">
+<p class="status" style="color: white; font-size: 20px;"></p>
+<h2 class="warn" style="color: red"></h2>
+<label for="URL">Masukan Apikeymu Disini:</label>
+<input type="text" class="form-control" placeholder="Cek Apikeymu" name="apikey" required="">
+<small id="textHelp" class="font">Gapunya Apikey om? Contact me on
+<a href="https://wa.me/6285867238794">
+Whatsapp
+</a>
+</small>
+</br></br>
+<button type="submit" class="btn btn-success">Cek Api</button>
+</div>
 	<div class="row justify-content-center">
 		<h4 data-aos="fade-up">Docs Page</h4>
 		<div class="col-twelve"  style="font-size: 16px;">
@@ -33,6 +55,14 @@
 								<td>Youtube Video Downloader</td>
 								<td>
 									<a target="__blank" href="/api/ytmp4?url=https://www.youtube.com/watch?v=9JS47BC0WXc&apikey=<%= apikey %>" class="button button-primary cta">Try</a>
+                  </td>
+							</tr>
+							<tr>
+								<td>Tiktok(Beta)</td>
+								<td>url & apikey</td>
+								<td>Fitur Masih Ngebug!</td>
+								<td>
+									<a target="__blank" href="/api/TikTok?url=https://vt.tiktok.com/ZS82u2sDu&apikey=<%= apikey %>" class="button button-primary cta">Try</a>
 								</td>
 							</tr>
 							<tr>
@@ -89,6 +119,14 @@
 								<td>Random Penyegar Timeline</td>
 								<td>
 									<a class="button button-primary" target="__blank" href="/api/ptl?apikey=<%= apikey %>">Try</a>
+                  </td>
+							</tr>
+							<tr>
+								<td>Gempa(Beta)</td>
+								<td>url & apikey</td>
+								<td>Masih Ngebug Bang:)</td>
+								<td>
+									<a target="__blank" href="/api/Gempa?apikey=<%= apikey %>" class="button button-primary cta">Try</a>
 								</td>
 							</tr>
 						</tbody>

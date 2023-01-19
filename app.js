@@ -80,8 +80,8 @@ app.get('/docs', isAuthenticated, async (req, res) => {
   });
 });
 
-app.get('/price', (req, res) => {
-  res.render('buyFull', {
+app.get('/pricing', (req, res) => {
+  res.render('priceNom', {
     layout: 'layouts/main'
   })
 })
